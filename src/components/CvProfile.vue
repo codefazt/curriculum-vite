@@ -37,7 +37,7 @@
                 </p>
 
                 <p class="text-justify">
-                  2.- Resolucion de maquinas en paginas como (trytohackme.com, vulnhub, dockerslab, etc)
+                  2.- Resolucion de maquinas en paginas como: trytohackme.com, vulnhub, dockerslab, etc
                 </p>
 
                 <p class="text-justify">
@@ -48,7 +48,7 @@
 
               <a href="https://www.youtube.com/watch?v=On2676eKeXs&t=1670s" class="btn btn-outline-danger"><i class="bi bi-youtube"></i></a> &nbsp;
               <a href="https://github.com/codefazt" class="btn btn-outline-secondary"><i class="bi bi-github"></i></a> &nbsp;
-              <a href="https://www.linkedin.com/in/johancarmino-3b8775201/" class="btn btn-outline-info"><i class="bi bi-linkedin"></i></a>
+              <a href="https://www.linkedin.com/in/johan-carmino-3b8775201" class="btn btn-outline-info"><i class="bi bi-linkedin"></i></a>
 
             </div>
           </div>
@@ -85,8 +85,7 @@
               </div>
 
               <hr/>
-
-              <a href="#" class="btn btn-outline-light">Curriculun</a> &nbsp; &nbsp;
+              <a :href="`${publicPath}CV-JCarmino-2025.pdf`" download="CV-JCarmino.pdf" class="btn btn-outline-light"><i class="bi bi-file-earmark-pdf"></i> Curriculum</a> &nbsp; &nbsp;
               <a href="#" class="btn btn-outline-light">Contactos</a>
 
             </div>
@@ -248,7 +247,10 @@ export default {
       job: 'DESARROLLADOR DE SOFTWARE',
       linkin:'https://www.linkedin.com/in/johan-carmino-3b8775201/',
       github: 'https://github.com/codefazt',
-      youtube: 'https://www.youtube.com/watch?v=On2676eKeXs&t=1670s'
+      youtube: 'https://www.youtube.com/watch?v=On2676eKeXs&t=1670s',
+      publicPath: process.env.BASE_URL
+      // pdfLink: '/assets/CV-JCarmino-2025.pdf'
+      // pdfLink: require('@/assets/CV-JCarmino-2025.pdf')
     }
   }
 }
