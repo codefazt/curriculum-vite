@@ -93,7 +93,7 @@
 
         </div>
 
-        <div class="col-md-3 pt-5">
+        <div class="col-md-3 pt-5 d-md-block d-none">
           <img src="./../assets/perfil-yo.jpeg" height="250" class="rounded d-block image-sytle mt-4" alt="...">
         </div>
 
@@ -107,10 +107,10 @@
           <h3 class="">&nbsp;&nbsp;<b><i class="bi bi-laptop"></i> &nbsp; EXPERIENCIA LABORAL</b></h3>
         </div>
 
-        <div class="col-md-4">
+        <div class="col-12 col-md-4 mb-4">
 
-          <div class="card ms-5" style="width: 18rem;">
-            <img src="./../assets/excle_img.png" height="130px" class="card-img-top" alt="...">
+          <div class="card">
+            <img src="./../assets/Logo_Excle_164x50.png" height="130px" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">
                 Creacion de sistema interno (ERP) para la gerencia de administracion contable y finanzas, nomina de empleados, logistica de (compra - ventas) de productos y servicios, Framework empleado -> (Frappe con ERPNEXT), Python, javascript, contenedores dockers, 
@@ -124,9 +124,9 @@
 
         </div>
 
-        <div class="col-md-4">
+        <div class="col-12 col-md-4 mb-4">
 
-          <div class="card ms-3" style="width: 18rem;">
+          <div class="card">
             <img src="./../assets/darian_tech_img.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">
@@ -141,8 +141,8 @@
 
         </div>
 
-        <div class="col-md-4">
-          <div class="card" style="width: 18rem;">
+        <div class="col-12 col-md-4 mb-4">
+          <div class="card">
             <img src="./../assets/mgi_accusys.png" class="card-img-top" alt="...">
             <div class="card-body">
               <p class="card-text">
@@ -283,4 +283,11 @@ text-style {
 .image-sytle {
   margin-left: -8em;
 }
+
+.container_style {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 </style>
