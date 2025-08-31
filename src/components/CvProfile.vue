@@ -32,7 +32,7 @@
               <a :href="youtube" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
             </div>
             <div class="action-buttons">
-              <a :href="`${publicPath}CV-JCarmino-2025.pdf`" download="CV-JCarmino.pdf" class="btn-cv">
+              <a :href="t.cvPath" :download="t.cvDownloadName" class="btn-cv">
                 <i class="bi bi-file-earmark-pdf"></i> {{ t.downloadCv }}
               </a>
               <a href="mailto:jcdeveloped@gmail.com" class="btn-cv">{{ t.contact }}</a>
@@ -142,6 +142,9 @@
 export default {
   name: 'CvProfile',
   data() {
+
+    console.log('Base URL:', process.env.BASE_URL);
+
     return {
       // Datos personales estáticos
       name: 'JOHAN CARMINO',
@@ -167,6 +170,8 @@ export default {
           aboutMeP2: 'I specialize in development architecture, including networks, infrastructure, and especially, information security.',
           aboutMeP3: 'I perform red team and blue team tests on the applications I develop to improve the experience of the delivered products. I have over 7 years of experience in various programming languages such as C#, <strong>Golang</strong>, Java, JavaScript, PHP, and <strong>Python</strong>, among others.',
           downloadCv: 'Download CV',
+          cvPath: process.env.BASE_URL + 'CV-JohanC-En.pdf',
+          cvDownloadName: 'CV-Johan-Carmino-EN.pdf',
           contact: 'Contact',
           hobbiesTitle: 'Hobbies',
           hobby1: 'Making videos about pentesting and programming techniques.',
@@ -202,6 +207,8 @@ export default {
           aboutMeP2: 'Me <b>especializo en la arquitectura del desarrollo</b>, incluyendo redes, infraestructura y, especialmente, seguridad de la información.',
           aboutMeP3: 'Realizo pruebas de red team y blue team en las aplicaciones que desarrollo para mejorar la experiencia de los productos entregados. Cuento con más de 7 años de experiencia en diversos lenguajes de programación, como C#, <strong>Golang</strong>, Java, JavaScript, PHP y <strong>Python</strong>, entre otros.',
           downloadCv: 'Descargar CV',
+          cvPath: process.env.BASE_URL + 'CV-JohanC-En.pdf', // Puedes cambiar esto por un CV en español si tienes uno
+          cvDownloadName: 'CV-Johan-Carmino-ES.pdf',
           contact: 'Contactar',
           hobbiesTitle: 'Pasatiempos',
           hobby1: 'Realizar videos sobre pentesting y tecnicas de programación.',
