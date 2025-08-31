@@ -123,6 +123,55 @@
                 <p>{{ t.machine3Desc }}</p>
               </div>
             </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_wgel_ctf.png" alt="Wgel CTF Machine">
+              <div class="card-content">
+                <h3>{{ t.machine4Title }}</h3>
+                <p>{{ t.machine4Desc }}</p>
+              </div>
+            </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_WELCOME.png" alt="Welcome Machine">
+              <div class="card-content">
+                <h3>{{ t.machine5Title }}</h3>
+                <p>{{ t.machine5Desc }}</p>
+              </div>
+            </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_Vulnversity.png" alt="Vulnversity Machine">
+              <div class="card-content">
+                <h3>{{ t.machine6Title }}</h3>
+                <p>{{ t.machine6Desc }}</p>
+              </div>
+            </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_Simple_CTF.png" alt="Simple CTF Machine">
+              <div class="card-content">
+                <h3>{{ t.machine7Title }}</h3>
+                <p>{{ t.machine7Desc }}</p>
+              </div>
+            </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_OpenVPN.png" alt="OpenVPN Machine">
+              <div class="card-content">
+                <h3>{{ t.machine8Title }}</h3>
+                <p>{{ t.machine8Desc }}</p>
+              </div>
+            </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_KENOBI.png" alt="Kenobi Machine">
+              <div class="card-content">
+                <h3>{{ t.machine9Title }}</h3>
+                <p>{{ t.machine9Desc }}</p>
+              </div>
+            </div>
+            <div class="machine-card card">
+              <img src="@/assets/Maquina_completada_AGENT_SUDO.png" alt="Agent Sudo Machine">
+              <div class="card-content">
+                <h3>{{ t.machine10Title }}</h3>
+                <p>{{ t.machine10Desc }}</p>
+              </div>
+            </div>
           </div>
           <button @click="prevCard" class="carousel-btn prev-btn"><i class="bi bi-chevron-left"></i></button>
           <button @click="nextCard" class="carousel-btn next-btn"><i class="bi bi-chevron-right"></i></button>
@@ -171,7 +220,7 @@ export default {
           aboutMeP2: 'I specialize in development architecture, including networks, infrastructure, and especially, information security.',
           aboutMeP3: 'I perform red team and blue team tests on the applications I develop to improve the experience of the delivered products. I have over 7 years of experience in various programming languages such as C#, <strong>Golang</strong>, Java, JavaScript, PHP, and <strong>Python</strong>, among others.',
           downloadCv: 'Download CV',
-          cvPath: process.env.BASE_URL + 'CV-JohanC-En.pdf',
+          cvPath: process.env.BASE_URL + 'CV-Johan-Carmino-EN.pdf',
           cvDownloadName: 'CV-Johan-Carmino-EN.pdf',
           contact: 'Contact',
           hobbiesTitle: 'Hobbies',
@@ -198,6 +247,20 @@ export default {
           machine2Desc: 'Vulnerable through a web flaw, allowing PHP code injection to access unauthorized paths.',
           machine3Title: 'Pickle Rick',
           machine3Desc: 'Intrusion through the web allowing a reverse shell and accessing the server.',
+          machine4Title: 'Wgel CTF',
+          machine4Desc: 'A beginner-friendly CTF involving web enumeration and privilege escalation via a SUID binary.',
+          machine5Title: 'Welcome',
+          machine5Desc: 'An introductory room to learn the basics of using the TryHackMe platform and cybersecurity fundamentals.',
+          machine6Title: 'Vulnversity',
+          machine6Desc: 'Exploit a vulnerable web server through a file upload vulnerability and escalate privileges.',
+          machine7Title: 'Simple CTF',
+          machine7Desc: 'A beginner CTF focused on cracking a password and exploiting a known vulnerability in vsftpd.',
+          machine8Title: 'OpenVPN',
+          machine8Desc: 'Exploit a known vulnerability in the OpenVPN Access Server to gain initial access.',
+          machine9Title: 'Kenobi',
+          machine9Desc: 'Enumerate SMB shares, exploit a vulnerable ProFTPd version, and escalate privileges using a SUID binary.',
+          machine10Title: 'Agent Sudo',
+          machine10Desc: 'A machine designed to practice Linux privilege escalation by exploiting sudo misconfigurations.',
           langBtn: 'Español',
           footerRights: 'All rights reserved.'
         },
@@ -208,7 +271,7 @@ export default {
           aboutMeP2: 'Me <b>especializo en la arquitectura del desarrollo</b>, incluyendo redes, infraestructura y, especialmente, seguridad de la información.',
           aboutMeP3: 'Realizo pruebas de red team y blue team en las aplicaciones que desarrollo para mejorar la experiencia de los productos entregados. Cuento con más de 7 años de experiencia en diversos lenguajes de programación, como C#, <strong>Golang</strong>, Java, JavaScript, PHP y <strong>Python</strong>, entre otros.',
           downloadCv: 'Descargar CV',
-          cvPath: process.env.BASE_URL + 'CV-JohanC-En.pdf', // Puedes cambiar esto por un CV en español si tienes uno
+          cvPath: process.env.BASE_URL + 'CV-Johan-Carmino-ES.pdf',
           cvDownloadName: 'CV-Johan-Carmino-ES.pdf',
           contact: 'Contactar',
           hobbiesTitle: 'Pasatiempos',
@@ -235,6 +298,20 @@ export default {
           machine2Desc: 'Vulnerable mediante fallo en web, permitiendo inyeccion de codigo php acceder a rutas no autorizadas.',
           machine3Title: 'Pickle Rick',
           machine3Desc: 'Intrusion mediante web permitiendo una reverse shell y accediendo al servidor.',
+          machine4Title: 'Wgel CTF',
+          machine4Desc: 'Un CTF para principiantes que implica enumeración web y escalada de privilegios a través de un binario SUID.',
+          machine5Title: 'Welcome',
+          machine5Desc: 'Una sala introductoria para aprender los conceptos básicos de la plataforma TryHackMe y los fundamentos de la ciberseguridad.',
+          machine6Title: 'Vulnversity',
+          machine6Desc: 'Explotar un servidor web vulnerable a través de una vulnerabilidad de carga de archivos y escalar privilegios.',
+          machine7Title: 'Simple CTF',
+          machine7Desc: 'Un CTF para principiantes centrado en descifrar una contraseña y explotar una vulnerabilidad conocida en vsftpd.',
+          machine8Title: 'OpenVPN',
+          machine8Desc: 'Explotar una vulnerabilidad conocida en el OpenVPN Access Server para obtener acceso inicial.',
+          machine9Title: 'Kenobi',
+          machine9Desc: 'Enumerar recursos compartidos SMB, explotar una versión vulnerable de ProFTPd y escalar privilegios usando un binario SUID.',
+          machine10Title: 'Agent Sudo',
+          machine10Desc: 'Una máquina diseñada para practicar la escalada de privilegios en Linux explotando configuraciones incorrectas de sudo.',
           langBtn: 'English',
           footerRights: 'Todos los derechos reservados.'
         }
