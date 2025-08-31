@@ -32,7 +32,7 @@
               <a :href="youtube" target="_blank" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
             </div>
             <div class="action-buttons">
-              <a :href="t.cvPath" :download="t.cvDownloadName" class="btn-cv">
+              <a :href="`${publicPath}CV-Johan-Carmino-EN.pdf`" :download="t.cvDownloadName" class="btn-cv">
                 <i class="bi bi-file-earmark-pdf"></i> {{ t.downloadCv }}
               </a>
               <a href="mailto:jcdeveloped@gmail.com" class="btn-cv">{{ t.contact }}</a>
