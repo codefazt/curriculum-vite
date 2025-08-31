@@ -143,7 +143,8 @@ export default {
   name: 'CvProfile',
   data() {
 
-    console.log('Base URL:', process.env.BASE_URL);
+    // Check for localStorage to prevent flash on load. Default to dark.
+    const darkModePreference = typeof window !== 'undefined' ? localStorage.getItem('darkMode') : null;
 
     return {
       // Datos personales estáticos
@@ -154,7 +155,7 @@ export default {
       publicPath: process.env.BASE_URL,
 
       // Estado de la UI
-      isDarkMode: false,
+      isDarkMode: darkModePreference !== 'false',
       currentLanguage: 'en', // 'en' o 'es'
 
       // Estado del carrusel
@@ -246,8 +247,11 @@ export default {
     }
   },
   mounted() {
-    const darkModePreference = localStorage.getItem('darkMode');
-    this.setDarkMode(darkModePreference === 'true');
+    // The theme is already set in data().
+    // We just need to ensure the preference is stored for the next visit if it's the first time.
+    if (localStorage.getItem('darkMode') === null) {
+      localStorage.setItem('darkMode', 'true');
+    }
     this.initCarousel();
   },
   methods: {
